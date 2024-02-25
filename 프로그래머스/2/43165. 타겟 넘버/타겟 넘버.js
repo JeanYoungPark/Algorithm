@@ -2,17 +2,16 @@ function solution(numbers, target) {
     var answer = 0;
     var visited = Array(numbers.length).fill().map(() => false);
     
-    function dfs(idx, arr){
+    function dfs(idx, val){
         if(idx === numbers.length) {
-            var val = arr.reduce((data, curr) => data+curr);
             if(val === target) answer += 1;
             return;
         }
         
-        dfs(idx+1, arr.concat(numbers[idx]));
-        dfs(idx+1, arr.concat(-1*numbers[idx]));
+        dfs(idx+1, val + numbers[idx]);
+        dfs(idx+1, val - numbers[idx]);
     }
     
-    dfs(0, []);
+    dfs(0, 0);
     return answer;
 }
