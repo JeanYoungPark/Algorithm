@@ -5,7 +5,8 @@ function solution(arr) {
         answer = [-1]
     }else{
         var min = Math.min(...arr);
-        answer = arr.filter((data) => data > min)
+        arr.splice(arr.indexOf(min), 1);
+        answer = arr;
     }
     
     return answer;
