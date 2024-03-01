@@ -1,7 +1,4 @@
 function solution(s) {
-    var answer = false;
-    if(s.length === 4 || s.length === 6){
-        answer = /^\d+$/.test(s);
-    }
+    var answer = /^\d{4}$|^\d{6}$/.test(s);
     return answer;
 }
