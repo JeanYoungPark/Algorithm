@@ -4,14 +4,12 @@ function solution(s, n) {
     
     for(var i = 0; i < arr.length; i++){
         if(arr[i] >= 65 && arr[i] <= 90){
-            // 대문자인경우
             arr[i] += n;
             
             if(arr[i] > 90){
                 arr[i] -= 26
             }
          }else if(arr[i] >= 97 && arr[i] <= 122){
-             // 소문자인경우
              arr[i] += n;
              
              if(arr[i] > 122){
