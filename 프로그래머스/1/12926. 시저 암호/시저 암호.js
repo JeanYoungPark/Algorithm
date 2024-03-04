@@ -15,7 +15,6 @@ function solution(s, n) {
              if(arr[i] > 122){
                 arr[i] -= 26
             }
-             console.log(arr[i])
          }
         
         answer += String.fromCharCode(arr[i]);
