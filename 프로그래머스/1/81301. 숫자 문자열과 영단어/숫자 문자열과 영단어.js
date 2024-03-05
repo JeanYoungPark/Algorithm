@@ -1,12 +1,11 @@
 function solution(s) {
-    var answer = 0;
+    var answer = s;
     var chart = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     
     for(var i = 0; i < chart.length; i++){
-        s = s.replaceAll(chart[i], i);
+        answer = answer.replaceAll(chart[i], i);
     }
     
-    answer = parseInt(s);
-    return answer;
+    return parseInt(answer);
     
 }
