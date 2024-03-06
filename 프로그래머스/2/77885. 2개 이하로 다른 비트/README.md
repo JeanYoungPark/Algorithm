@@ -1,10 +1,10 @@
 # [level 2] 2개 이하로 다른 비트 - 77885 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77885) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77885#) 
 
 ### 성능 요약
 
-메모리: 58.8 MB, 시간: 168.01 ms
+메모리: 59 MB, 시간: 205.72 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 06일 15:32:02
+2024년 03월 06일 15:35:04
 
 ### 문제 설명
 
